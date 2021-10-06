@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona-1</title>
+    <script>
+		function odliczanie()
+	{
+		var dzisiaj = new Date();
+		
+		var godzina = dzisiaj.getHours();
+		if (godzina<10) godzina = "0"+godzina;
+		
+		var minuta = dzisiaj.getMinutes();
+		if (minuta<10) minuta = "0"+minuta;
+		
+		var sekunda = dzisiaj.getSeconds();
+		if (sekunda<10) sekunda = "0"+sekunda;
+		
+		document.getElementById("clock").innerHTML = 
+		godzina+":"+minuta+":"+sekunda;
+		 
+		 setTimeout("odliczanie()",1000);
+	}
+	</script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #eee;
+            font-family: sans-serif;
+        }
+        .zdjecie {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(landscape.jpg);
+            background-size: cover;
+        }        
+        .main {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       .content {
+            text-align: center;
+        }
+        
+        .content h1{
+            font-size: 80px;
+            color: #fff;
+        }    
+       
+        .content .button {
+            border: none;
+            outline: none;
+            padding: 15px;
+            margin-top: 100px;
+            border-radius: 4px;
+            color: #eee;
+            font-size: 18px;
+            cursor: pointer;    
+            background: #222;  
+			text-decoration: none;
+        }
+		.content .button:hover {
+            border: none;
+            outline: none;
+            padding: 15px;
+            margin-top: 100px;
+            border-radius: 4px;
+            color: #eee;
+            font-size: 20px;
+            cursor: pointer;    
+            background: #9933cc;             
+        }
+        .container {
+            width: 70%;
+            margin: 50px auto;
+            padding: 10px;
+}
+
+        .container .txt {
+            width: 100%;
+            padding: 50px;
+            background: #fff;
+            margin-top: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px -3px rgba(0, 0, 0, .1);
+        }
+		#clock {
+			text-align: center;
+		}
+		.stopka {
+			width: 100%;
+            padding: 50px;
+            background: #fff;
+            margin-top: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px -3px rgba(0, 0, 0, .1);
+			text-align: center;
+		}
+    </style>
+</head>
+<body onload="odliczanie();">
+    <div class="zdjecie">
+        <div class="main">
+           <div class="content">
+              <h1>Kamil Bętkowski</h1>
+              <br /><br />
+              <a class="button" href="index.html">Strona Główna</a>
+           </div>
+        </div>
+    </div>
+    
+   
+   <div class="container">
+   <section>
+				<div id="clock"></div>
+			</section>	
+       <div class="txt">
+           <p>
+                
+
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat massa vel volutpat accumsan. Donec bibendum at lorem quis congue. Sed mattis quis ex ut feugiat. Praesent sed metus eget turpis ullamcorper dictum non sit amet dolor. Sed non finibus neque. Aenean nec laoreet diam. Duis facilisis lacus non eros venenatis tempus. Nullam non lacus urna. Nulla eget ultrices lacus, accumsan sollicitudin magna. Sed nec quam placerat, laoreet purus vitae, consectetur ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus, nisi vitae feugiat porttitor, risus metus euismod risus, nec egestas lectus mi et lacus. In eget pharetra quam. Ut leo odio, auctor ut dolor volutpat, euismod cursus justo. Morbi placerat enim sed est pharetra, sed suscipit justo feugiat.
+				
+				Maecenas faucibus sed tellus quis luctus. Aliquam placerat porttitor mi nec egestas. Nulla porttitor tincidunt ex. Integer aliquet, augue eu ultrices pharetra, risus est finibus odio, et hendrerit nunc urna eu metus. Quisque et turpis in dolor placerat consectetur. Nulla facilisi. Curabitur condimentum eleifend orci a dapibus. Vestibulum ut consequat enim. Aenean gravida, quam ac semper sodales, nisi tellus facilisis arcu, nec faucibus diam sapien ac lacus. Morbi consequat eleifend est a dapibus. Morbi eget tortor et libero tincidunt imperdiet. Nam ac rhoncus mauris, non lobortis sapien. Sed vitae nisi efficitur, ornare dolor vel, cursus magna.
+
+			</p>
+       </div>
+       
+       <div class="txt">
+           <p>
+                Cras at massa elit. Praesent commodo nibh egestas consectetur facilisis. Cras urna tortor, tempor non auctor at, dignissim id arcu. Fusce eget risus eleifend, viverra erat a, consectetur urna. Proin non congue risus. Curabitur ac suscipit metus. Nunc malesuada pellentesque ante, in imperdiet purus posuere sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In id vehicula massa. Phasellus lobortis, dui sed laoreet efficitur, velit orci aliquam libero, vel fermentum lacus metus vel ante. Donec auctor massa nec vulputate aliquam. Maecenas consectetur vulputate quam, sit amet cursus dolor condimentum vel. Suspendisse aliquet sapien vitae ipsum interdum, et vestibulum ante pellentesque. Donec posuere enim id lorem efficitur sagittis.
+				
+				Fusce quis libero euismod, gravida felis ut, convallis ligula. Integer facilisis id sapien sit amet ullamcorper. In congue sed ante a commodo. Maecenas at ligula et lectus convallis gravida nec et erat. Phasellus turpis ante, vulputate a sem non, consequat fringilla lacus. Suspendisse volutpat feugiat sapien a pretium. Fusce sed facilisis eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+			 
+           </p>
+       </div>
+       
+       <div class="txt">
+           <p>
+                Vivamus euismod lacus tortor, eu semper lorem ornare semper. Sed quis interdum nulla. Praesent a erat id lectus maximus mattis. Ut convallis arcu id augue vehicula imperdiet. Suspendisse non congue augue. Nullam odio lorem, ultricies molestie nisi ac, efficitur gravida purus. Maecenas aliquam justo tellus, sed venenatis eros maximus pharetra. Cras et tellus tincidunt, vestibulum libero et, mattis eros. In dapibus vulputate tortor, et bibendum lectus sagittis et. Suspendisse eros ligula, tristique ut feugiat nec, consequat eu nunc. Aliquam efficitur pulvinar ligula. Nulla facilisi. Praesent non lobortis eros. Maecenas ornare felis nec erat rhoncus, pharetra pellentesque nisi imperdiet. Nam sit amet neque ultrices, ullamcorper nisl et, venenatis elit. Nulla facilisi.
+           </p>
+       </div>
+       
+       
+   </div>
+   
+   <footer>
+		<div class="stopka">13499</div>
+	</footer>
+    
+</body>
+</html>
